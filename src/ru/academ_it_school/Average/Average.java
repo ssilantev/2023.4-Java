@@ -1,4 +1,4 @@
-package ru.academ_it_school.avarage;
+package ru.academ_it_school.Average;
 
 public class Average {
 
