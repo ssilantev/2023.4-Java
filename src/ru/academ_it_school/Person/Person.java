@@ -6,13 +6,13 @@ public class Person {
 	private String name;
 	private String middleName;
 	private String familyName;
-	private int yearOfBirth;
+	private int age;
 
-	public Person(String name, String middleName, String familyName, int yearOfBirth) {
+	public Person(String name, String middleName, String familyName, int age) {
 		this.name = name;
 		this.middleName = middleName;
 		this.familyName = familyName;
-		this.yearOfBirth = yearOfBirth;
+		this.age = age;
 	}
 
 	public String getName() {
@@ -35,15 +35,15 @@ public class Person {
 		this.familyName = familyName;
 	}
 
-	public int getYarOfBirth() {
-		return yearOfBirth;
+	public int getAge() {
+		return age;
 	}
-	public void setYearOfBirth(int yearOfBirth) {
-		this.yearOfBirth = yearOfBirth;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
-	public static int age(int yearOfBirth) {
-		return YearMonth.now().getYear() - yearOfBirth;
+	public static int yearOfBirth(int age) {
+		return YearMonth.now().getYear() - age;
 	}
 
 	@Override

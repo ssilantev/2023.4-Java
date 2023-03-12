@@ -15,11 +15,11 @@ public class Main {
 		System.out.print("Type your family Name: ");
 		String familyName = scanner.nextLine();
 
-		System.out.print("Enter your year of birth: ");
-		int yearOfBirth = scanner.nextInt();
+		System.out.print("Enter your age: ");
+		int age = scanner.nextInt();
 
-		Person person = new Person(name, middleName, familyName, yearOfBirth);
+		Person person = new Person(name, middleName, familyName, age);
 
-		System.out.print("\nRegistered client: " + person + ";\nClient age: " + Person.age(yearOfBirth) + ".\n");
+		System.out.print("\nRegistered client: " + person + ",\nClient's year of birth: " + Person.yearOfBirth(age) + ".\n");
 	}
 }
