@@ -11,9 +11,11 @@ public class Numbers {
 		}
 		return false;
 	}
+
 	public static int strToInt(String a) {
 		return Integer.parseInt(a);
 	}
+
 	public static int digitSum(String a) {
 		int num = strToInt(a);
 		int sum = 0;
@@ -23,6 +25,7 @@ public class Numbers {
 			}
 		return sum;
 	}
+
 	public static int oddDigitSum(String a) {
 		int numOdd = strToInt(a);
 		int sumOdd = 0;
@@ -34,6 +37,7 @@ public class Numbers {
 		}
 		return sumOdd;
 	}
+
 	public static int maxDigit(String a) {
 		int num = strToInt(a);
 		int remainder;
@@ -45,7 +49,6 @@ public class Numbers {
 			}
 			num /= 10;
 			}
-
 		return max;
 	}
 }

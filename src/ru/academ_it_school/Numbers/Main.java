@@ -14,6 +14,7 @@ public class Main {
 			System.out.print("Your value is: ");
 			a = scanner.nextLine();
 		}
+
 		System.out.println("The value is really an integer!\n");
 
 		System.out.println("The sum of the digits of " + a + " is: " + Numbers.digitSum(a) + ".");
